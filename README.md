@@ -3,19 +3,7 @@
 
 The App strcture has been used
 
-src/app/page.tsx          → Home
-src/app/addSchool/page.tsx → Form to Add School 
-src/app/showSchool/page.tsx → School listing
-src/app/api/addSchool/route.ts → API for making new school entries   GET
-src/app/api/getSchools/route.ts → API for gettting information about available schools  POST
-
-
-A database named schooldb has been setup with a single table "schools"
-
-There is a folder in public, named schoolImages that will contain images of the schools. Created using addSchool.
-
-
-
+---
 
 ## App Structure
 
@@ -28,6 +16,27 @@ There is a folder in public, named schoolImages that will contain images of the 
 | `src/app/api/getSchools/route.ts` | API to fetch information about available schools (GET) |
 
 --- 
+
+
+## Database
+
+A database named `schooldb` has been set up with a single table `schools`.
+
+**Table Structure:**
+
+```sql
+CREATE TABLE schools (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  address VARCHAR(255) NOT NULL,
+  city VARCHAR(100) NOT NULL,
+  state VARCHAR(100) NOT NULL,
+  contact VARCHAR(20) NOT NULL,
+  email_id VARCHAR(150) NOT NULL,
+  image VARCHAR(255)
+);
+
+There is a folder in public, named schoolImages that will contain images of the schools. Created using addSchool.
 
 The app is hosted on vercel. 
 
