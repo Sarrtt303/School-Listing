@@ -1,7 +1,9 @@
 # School Details Display and Creation:
 
+The app consist of two pages, addSchool and showSchool, which are made using app router of nextjs, each folder contains page.tsx or route.tsx that is the root folder for the respective directory and type of file(frontend/backend respectively). Sort of like how php directories have index.php.
 
-The App strcture has been used
+
+
 
 ---
 
@@ -35,12 +37,13 @@ CREATE TABLE schools (
   email_id VARCHAR(150) NOT NULL,
   image VARCHAR(255)
 );
+```
 
-There is a folder in public, named schoolImages that will contain images of the schools. Created using addSchool.
+There is a folder in public, named schoolImages that will contain images of the schools. Created using addSchool page.
 
 The app is hosted on vercel. 
 
-Resposiveness:
+Responsiveness:
 Added a Hamburger Menu for the Navbar.
 The display changes from flex to row with decreaseing screen size.
 
