@@ -15,18 +15,19 @@ A database named schooldb has been setup with a single table "schools"
 There is a folder in public, named schoolImages that will contain images of the schools. Created using addSchool.
 
 
-This is the table strcture:
 
-CREATE TABLE schools (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
-  address VARCHAR(255) NOT NULL,
-  city VARCHAR(100) NOT NULL,
-  state VARCHAR(100) NOT NULL,
-  contact VARCHAR(20) NOT NULL,
-  email_id VARCHAR(150) NOT NULL,
-  image VARCHAR(255)
-);
+
+## App Structure
+
+| Path | Description |
+|------|-------------|
+| `src/app/page.tsx` | Home page |
+| `src/app/addSchool/page.tsx` | Form to add a new school |
+| `src/app/showSchool/page.tsx` | School listing page |
+| `src/app/api/addSchool/route.ts` | API to create new school entries (POST) |
+| `src/app/api/getSchools/route.ts` | API to fetch information about available schools (GET) |
+
+--- 
 
 The app is hosted on vercel. 
 
